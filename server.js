@@ -300,6 +300,9 @@ io.on("connection", (socket) => {
       case "disconnected":
         socket.emit("disconnected");
         break;
+      case "qr":
+        //socket.emit("waiting");
+        break;
       default:
         console.log(
           `Client ${username} has unknown connection status ${connectionStatus.get(
