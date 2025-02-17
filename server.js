@@ -4,7 +4,7 @@ import { Server } from "socket.io";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
-import session from "express-session";
+import session from "cookie-session";
 import { Client, LocalAuth } from "whatsapp-web.js";
 import qrcode from "qrcode";
 import { getUserSettings, updateUserSettings, getUser, createUser } from "./db";
